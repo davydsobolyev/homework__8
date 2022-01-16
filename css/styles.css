@@ -1,0 +1,145 @@
+:root{
+    --main-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --second-accent-color: #ffffff;
+}
+.logo-1{
+    font-family: Raleway,"Sans-serif";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    color:var(--accent-color)
+
+}
+.logo-2{
+    font-family: Raleway,"Sans-serif";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    color:var(--title-text-color)
+
+
+}
+.logo-3{
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 26px;
+    line-height: 1.17;
+    color: var(--second-accent-color);
+
+
+}
+
+.title-head{
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+   
+
+}
+.contacs{
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--main-color);
+  
+}
+.contacs-2{
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.71;
+    color: var(--main-color);
+}
+
+
+.contacs:hover,
+.title-head:hover,
+.title-head:focus,
+.contacs:focus,
+.contacs-2:focus,
+.contacs-2:hover{
+    color: var(--accent-color);
+}
+body{
+    font-family: Roboto, "Sans-serif";
+    font-size: 14px;
+    line-height:1.71;
+    color:var(--main-color)
+
+
+
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--second-accent-color);
+}
+.hero-button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+.section-dark{
+    background-color: #2F303A;
+}
+
+button{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+
+.sub-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+}
+.title-2{
+    font-weight: 700;
+    font-size: 36x;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    text-align: center;
+    color: var(--title-text-color);
+}
+.card-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+}
+.cards{
+    text-align: center;
+}
+.title-card-port{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2.3;
+    color: var(--title-text-color)
+}
+.address{
+    color: var(--second-accent-color)
+
+}
+
+.button-port{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align:center;
+}
+.button-port:hover,.button-port:focus{
+    color:var(--accent-color)
+}
