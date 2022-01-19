@@ -1,38 +1,29 @@
+/* -----------------SETTINGS------------------*/
+
 :root{
     --main-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --second-accent-color: #ffffff;
 }
-.logo-1{
-    font-family: Raleway,"Sans-serif";
-    font-weight: bold;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color:var(--accent-color)
 
+
+body{
+        font-family: Roboto, "Sans-serif";
+        font-size: 14px;
+        line-height:1.71;
+        color:var(--main-color)
 }
-.logo-2{
-   
-    color:var(--title-text-color);
-    font-family: Raleway, "Sans-serif";
-    font-weight: bold;
-    font-size: 26px;
-    line-height:calc(31 /26);
-    letter-spacing: 0.03em;
 
-
+    
+ul{
+    list-style-type: none;
 }
-.logo-3{
-    font-family: Raleway, "Sans-serif";
-    font-weight: bold;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color: var(--second-accent-color)
+a{
+    text-decoration: none;
+}
    
-
+/* -----------------------HEADER-------------------------*/
 
 }
 
@@ -69,15 +60,40 @@
 .contacs-2:hover{
     color: var(--accent-color);
 }
-body{
-    font-family: Roboto, "Sans-serif";
-    font-size: 14px;
-    line-height:1.71;
-    color:var(--main-color)
 
+/*-----------------------------------LOGOS-----------------------------*/
+.logo-1{
+    font-family: Raleway,"Sans-serif";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color:var(--accent-color)
+
+}
+.logo-2{
+   
+    color:var(--title-text-color);
+    font-family: Raleway, "Sans-serif";
+    font-weight: bold;
+    font-size: 26px;
+    line-height:calc(31 /26);
+    letter-spacing: 0.03em;
 
 
 }
+.logo-3{
+    font-family: Raleway, "Sans-serif";
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--second-accent-color)
+
+
+
+/* ---------------------HERO SECTION-------------------------*/
+
 .hero-title{
     color: var(--second-accent-color);
     font-weight: 900;
@@ -102,15 +118,6 @@ body{
     background-color: #2F303A;
 }
 
-button{
-    cursor: pointer;
-}
-ul{
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-}
 
 .sub-title{
    font-weight: bold;
@@ -177,6 +184,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.03em;
 
 }
+/* -------------------------------------Buttons--------------------------------------*/
 
 .button-port{
     font-family:Roboto , "Sans-serif";
@@ -189,4 +197,7 @@ letter-spacing: 0.03em;
 }
 .button-port:hover,.button-port:focus{
     color:var(--accent-color)
+}
+button{
+    cursor: pointer;
 }
