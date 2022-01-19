@@ -24,4 +24,10 @@ a{
 }
 
 
-
+/*-----------------LOGOS---------------------*/
+.logo{
+    color:var(--accent-color)
+}
+.logo-2{
+    color:var(--title-text-color)
+}
