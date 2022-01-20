@@ -101,6 +101,9 @@ body{
     letter-spacing: 0.06em;
     color: var(--second-accent-color);
     background-color: var(--accent-color);
+    cursor: pointer;
+    border:0;
+    border-radius: 3px;
 }
 
 .features-title{
@@ -168,6 +171,7 @@ color:var(--title-text-color)
 }
 
 .address-location{
+    font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -176,9 +180,47 @@ color:var(--title-text-color)
 }
 
 .contacs-address{
+    font-style: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+/*----------------------------PORTFOLIO SECTION-----------------------------*/
 
+.button-port{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: var(--team-section-background);
+    cursor: pointer;
+}
+
+.button-port:hover,
+.button-port:focus,.current-button:focus,.current-button:hover
+{
+    background-color: var(--accent-color);
+    color:var(--second-accent-color)
+}
+
+.portfolio-card-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    color:var(--title-text-color);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.portfolio-cards-text{
+    font-size: 16px;
+    line-height: calc(30 /16);
+    color:inherit;
+    letter-spacing: 0.03em;
+
+}
