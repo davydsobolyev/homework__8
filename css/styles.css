@@ -31,3 +31,6 @@ a{
 .logo-2{
     color:var(--title-text-color)
 }
+.logo-3{
+    color:var(--second-accent-color)
+}
