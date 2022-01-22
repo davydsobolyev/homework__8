@@ -93,7 +93,6 @@ body{
     color: var(--second-accent-color);
 }
 .hero-button{
-    display: inline-block;
     font-family: Roboto, "Sans-serif";
     font-weight: 700;
     font-size: 16px;
