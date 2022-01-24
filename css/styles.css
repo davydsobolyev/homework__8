@@ -8,6 +8,17 @@
     --background-secondary-colour: #2F303A;
     --team-section-background: #F5F4FA;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin:0;
+    padding:0;
+}
+
+
 
 
 body{
@@ -18,8 +29,10 @@ body{
 }
 
     
-ul{
-    list-style-type: none;
+
+p{
+    margin:0;
+    padding:0;
 }
 a{
     text-decoration: none;
@@ -33,11 +46,28 @@ body{
 
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .limk{
     text-decoration: none;
 }
-
+.container{
+    text-align: center;
+    width:1170px;
+    padding-right::15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+.footer > .container{
+    text-align: left;
+    width:1170px;
+    padding-right::15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
 /*-----------------LOGOS---------------------*/
 .logo{
     color:var(--accent-color);
@@ -47,6 +77,7 @@ body{
     line-height: 1.20;
 
     letter-spacing: 0.03em;
+    margin-right:93px;
 }
 .logo-2{
     color:var(--title-text-color)
@@ -89,8 +120,12 @@ body{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    text-transform: uppercase;
     text-align: center;
     color: var(--second-accent-color);
+
+    margin-bottom: 30px;
+    padding-top: 200px;
 }
 .hero-button{
     font-family: Roboto, "Sans-serif";
@@ -104,22 +139,41 @@ body{
     cursor: pointer;
     border:0;
     border-radius: 3px;
+    margin-bottom: 200px;
 }
-
+/*----------------------FEATURE-SECTION---------------------*/
 .features-title{
     font-weight: bold;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+
+    margin-bottom: 10px;
 
 }
-.feautures-discription{
+.features-description{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--main-color);
+
+    margin-bottom: 94px;
+
+    
+
+}
+.features-item:nth-of-type(n+2){
+    margin-left: 30px;
+}
+
+
+.section-feature{
+    padding-top: 94px;
+}
+.features-list{
+    display:flex;
 }
 /*----------------------------ACTIVITY SECTION----------------------------*/
 .activity-title{
@@ -128,7 +182,12 @@ body{
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+
+    margin-bottom: 30px;
+
+
+
 }
 
 /*------------------------------TEAM SECTION--------------------------------------*/
@@ -142,6 +201,7 @@ line-height: calc(42 / 36);
 text-align: center;
 letter-spacing: 0.03em;
 color:var(--title-text-color);
+margin-bottom: 50px;
 
 
 }
@@ -199,6 +259,7 @@ color:var(--title-text-color)
     color: var(--title-text-color);
     background-color: var(--team-section-background);
     cursor: pointer;
+    border:none;
 }
 
 .button-port:hover,
@@ -222,5 +283,42 @@ color:var(--title-text-color)
     line-height: calc(30 /16);
     color:inherit;
     letter-spacing: 0.03em;
+
+}
+/*--------------FLEX CONTAINER-----------------------------*/
+.title-head-list{
+    display: flex;
+
+}
+.navigation-header{
+    display:flex;
+    align-items: center;
+}
+.header-nav-item + .header-nav-item {
+    margin-left:50px;
+}
+.contacs-header{
+    display:flex;
+    margin-left: auto;
+}
+.header-container{
+    display:flex;
+}
+.features-title{
+    margin-bottom: 10px;
+}
+]
+}
+.features-list{
+    display:flex
+    
+}
+.contacs-header-item+.contacs-header-item{
+    margin-left: 50px;
+}
+    
+.footer-logo{
+    margin-bottom: 20px;
+   
 
 }

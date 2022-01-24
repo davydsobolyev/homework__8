@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
-    <header>
-        <a href="" class="logo link">Web<span lang="en" class="logo-2">Studio</span></a>
-        <nav class="navigation-header">
-         <ul class="header-nav-list list">
-            <li><a class="title-head link current" href="">Студия</a></li>
-            <li><a class="title-head link" href="./portfolio.html" >Портфолио</a></li>
-            <li><a class="title-head link" href="">Контакты</a></li>
+    <header class="page-header">
+     <div class="container header-container">
+       <nav class="navigation-header">
+         <a href="" class="logo link">Web<span lang="en" class="logo-2">Studio</span></a>
+         <ul class="title-head-list list">
+            <li class="header-nav-item"><a class="title-head link current" href="">Студия</a></li>
+            <li class="header-nav-item"><a class="title-head link" href="./portfolio.html" >Портфолио</a></li>
+            <li class="header-nav-item"><a class="title-head link" href="">Контакты</a></li>
          </ul>
     
         </nav> 
@@ -26,45 +27,53 @@
             <li class="contacs-header-item"><a class="contacs-header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li class="contacs-header-item"><a class="contacs-header-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
+    
 
-        
+     </div>  
     </header>
 <main>
     <section class="section-hero">
+      <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button">Заказать услугу</button>
+      </div>
     </section>
-    <section>
+    <section class="section-feature">
+     <div class="container">
         <h2 lang="en" hidden> Features</h2>
         <ul class="features-list list">
-         <li>
+         <li class="features-item">
             <h3 class="features-title">Внимание к деталям</h3>
-            <p class="feautures-discription ">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            <p class="features-description ">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
          </li>
-         <li>
+         <li class="features-item">
              <h3 class="features-title">Пунктуальность</h3>
              <p class="features-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-         <li>
+         <li class="features-item">
              <h3 class="features-title">Планирование</h3>
              <p class="features-description">Равным образом консультация с широким активом в значительной степени обуславливает</p>
          </li>
-         <li>
+         <li class="features-item">
              <h3 class="features-title">Современные технологии</h3>
              <p class="features-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
              
          </li>
         </ul>
+     </div>
     </section>
     <section class="activity">
+      <div class="container"></div>
         <h2 class="activity-title">Чем мы занимаемся</h2>
         <ul class="activity-list list">
          <li><img class="activity-image" src="./images/image1.jpg" alt="Работник в офисе работает с айпадом ии копмьютером" width="370" /></li>
          <li><img class="activity-image" src="./images/image2.jpg" alt="Работник офиса работает с ноутбуком" width="370"/></li>
          <li><img class="activity-image" src="./images/image3.jpg" alt="Планшет с политрой красок" width="370" /></li>
         </ul>
+      </div>
     </section>
     <section class="team">
+     <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
          <li class="team-item">
@@ -88,20 +97,23 @@
              <p lang="en" class="team-profesion">UI Designer</p>
          </li>
         </ul>
-
+      </div>
     </section>
+    
 
 </main>
+
 <footer class="footer">
-    <a href="" class="logo link">Web<span lang="en" class="logo-3">Studio</span></a>
+ <div class="container">
+    <a href="" class="logo link footer-logo">Web<span lang="en" class="logo-3">Studio</span></a>
     <address class="address">
         <ul class="address-list list">
-          <li class="address-item"><a href="" target="_blank" class="address-location link">г.Киев,пр-тЛесии Украинки,26</a></li>
+          <li class="address-item"><a href="" target="_blank" class="address-location link">г.Киев,пр-тЛеси Украинки,26</a></li>
           <li class="address-item"><a href="mailto:info@example.com" class=" contacs-address link">info@example.com</a></li>
           <li class="address-item"><a href="tel:+380991111111" class="contacs-address link">+38 099 111 11 11</a></li>
         </ul>
-    </address>
-
+    </address>  
+</div>
 </footer>
 
 
