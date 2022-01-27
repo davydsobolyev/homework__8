@@ -111,10 +111,7 @@ body{
     line-height: 1.17;
     color:var(--main-color)
 }
-.contacs-header-item{
-    padding-bottom: 32px;
-    padding-top: 32px;
-}
+
 .contacs-header-link:hover,
 .title-head:hover,
 .title-head:focus,
@@ -124,6 +121,8 @@ body{
 
 .contacs-header-link {
     display: block;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 /*------------------------HERO SECTION-----------------*/
