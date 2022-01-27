@@ -200,6 +200,10 @@ body{
 .features-list{
     display:flex;
 }
+
+.features-item{
+    text-align: start;
+}
 /*----------------------------ACTIVITY SECTION----------------------------*/
 
 .activity{
