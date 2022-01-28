@@ -335,7 +335,10 @@ margin-bottom:10px;
 .address-item{
     margin-bottom: 9px;
 }
-.address-item:hover,.address-item:focus{
+.contacs-address:focus,
+.contacs-address:hover,
+.address-location:focus,
+.address-location:hover{
     color:var(--accent-color);
 }
 .address-item:nth-child(3){
@@ -371,6 +374,10 @@ margin-bottom:10px;
     
 
 }
+.currrent-bottom{
+    background-color: var(--accent-color);
+    color:var(--second-accent-color);
+}
 
 
 .button-port:hover,
@@ -381,9 +388,9 @@ margin-bottom:10px;
 }
 
 .portfolio-card-title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(26 / 16);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: calc(36 / 18);
     color:var(--title-text-color);
     letter-spacing: 0.03em;
 }
@@ -409,11 +416,9 @@ margin-bottom:10px;
 .portfolio-cards-item:nth-of-type(3n){
     margin-right: 0;
 }
-.portfolio-cards-item:nth-of-type(n + 7){
-    margin-bottom: 94px;
-}
 .portfolio{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .portfolio-card-text{
     padding-top: 20px;
