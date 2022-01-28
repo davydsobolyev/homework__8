@@ -78,7 +78,7 @@ body{
     line-height: 1.20;
 
     letter-spacing: 0.03em;
-    margin-right:93px;
+   
 }
 .logo-2{
     color:var(--title-text-color)
@@ -144,6 +144,8 @@ body{
     color: var(--second-accent-color);
 
     margin-bottom: 30px;
+
+    letter-spacing: 0.06em;
     
 }
 .hero-button{
@@ -186,8 +188,9 @@ body{
     color: var(--main-color);
 }
 
-.section-item{
+.features-item{
     width:270px;
+    height: 101px;
     text-align:left;
 }
 
@@ -203,6 +206,16 @@ body{
 .features-item{
     text-align: start;
 }
+
+
+
+
+.features-list{
+    display:flex
+}
+    
+
+
 /*----------------------------ACTIVITY SECTION----------------------------*/
 
 .activity{
@@ -322,6 +335,9 @@ margin-bottom:10px;
 .address-item{
     margin-bottom: 9px;
 }
+.address-item:hover,.address-item:focus{
+    color:var(--accent-color);
+}
 .address-item:nth-child(3){
     margin-bottom: 0;
 }
@@ -403,7 +419,9 @@ margin-bottom:10px;
     padding-top: 20px;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
+    border-top: none;
     padding-left: 24px;
+    padding-right: 24px;
     text-align: left;
 }
 
@@ -411,6 +429,7 @@ margin-bottom:10px;
 /*--------------FLEX CONTAINER-----------------------------*/
 .title-head-list{
     display: flex;
+    margin-left: 93px;
 
 }
 .navigation-header{
@@ -441,6 +460,7 @@ margin-bottom:10px;
 }
     
 .footer-logo{
+    display:block;
     margin-bottom: 20px;
 }
 .footer{
