@@ -439,10 +439,17 @@ margin-bottom:10px;
     justify-content: center;
     color: var(--social-media-card-color)
 }
+.clients-link{
+    color: var(--social-media-card-color)
+}
 .clients-item + .clients-item{
     margin-left: 30px;
 }
-.clients-item:hover,.clients-item:focus{
+.clients-item:hover .clients-link,.clients-item:focus .clients-link{
+    color: var(--accent-color);
+    cursor: pointer;
+}
+.clients-item:hover ,.clients-item:focus{
     border-color: var(--accent-color);
     color: var(--accent-color);
     cursor: pointer;
@@ -507,7 +514,6 @@ margin-bottom:10px;
     
 }
 .social-media-footer{
-    margin-top: 15px;
 }
 .footer-media-list{
     display: flex;
