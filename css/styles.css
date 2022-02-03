@@ -457,11 +457,7 @@ margin-bottom:10px;
     cursor: pointer;
     border-color: var(--accent-color);
 }
-.clients-item:hover ,.clients-item:focus{
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    cursor: pointer;
-}
+
 .logo-item{
     fill:currentColor
 }
@@ -656,6 +652,9 @@ margin-bottom:10px;
     padding-left: 24px;
     padding-right: 24px;
     text-align: left;
+}
+.port-link{
+    display:inline-block;
 }
 .port-link:hover,.port-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
