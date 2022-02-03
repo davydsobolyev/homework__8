@@ -443,7 +443,13 @@ margin-bottom:10px;
     color: var(--social-media-card-color)
 }
 .clients-link{
-    color: var(--social-media-card-color)
+    color: var(--social-media-card-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+
 }
 .clients-item + .clients-item{
     margin-left: 30px;
@@ -460,6 +466,7 @@ margin-bottom:10px;
 .logo-item{
     fill:currentColor
 }
+.
 /*---------------------------------FOOTER SECTION---------------------------*/
 
 .footer{
@@ -613,6 +620,14 @@ margin-bottom:10px;
     line-height: calc(30 /16);
     color:inherit;
     letter-spacing: 0.03em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+
+
+
 
 }
 .portfolio-cards-list{
@@ -643,7 +658,7 @@ margin-bottom:10px;
     padding-right: 24px;
     text-align: left;
 }
-.port-link:hover,.port-link:focus{
+.portfolio-cards-item:hover,.portfolio-cards-item:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
