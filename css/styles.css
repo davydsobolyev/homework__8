@@ -729,6 +729,38 @@ margin-bottom:10px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.port-img-text{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    padding-top:63px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    padding-right: 24px;
+   
+    font-size: 18px;
+    font-weight:normal;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    text-align: left;
+    color:var(--second-accent-color);
+    background-color:rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    
+    
+}
+.portfolio-overlay{
+    position:relative;
+    overflow: hidden;
+
+}
+
+.portfolio-cards-item:hover .port-img-text{
+    transform: translateY(0);
+}
 /*--------------FLEX CONTAINER-----------------------------*/
 .title-head-list{
     display: flex;
