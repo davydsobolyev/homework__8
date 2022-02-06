@@ -112,6 +112,8 @@ body{
     display: block;
     padding-bottom: 32px;
     padding-top: 32px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    position: relative;
 }
 .page-header{
     border: 1px solid #ECECEC;
@@ -130,6 +132,7 @@ body{
 
     padding-bottom: 32px;
     padding-top: 32px;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .contacs-header-link:hover,
@@ -147,7 +150,7 @@ body{
 .mailbox{
     margin-right: 10px;
     fill: currentColor;
-    
+  
 }
 .mailbox:hover,
 .mailbox:focus{
@@ -162,6 +165,36 @@ body{
     fill:var(--accent-color);
 }
 
+.current-page-main{
+    position: relative;
+}
+
+.current-page-main::after{
+    content:"";
+    background-color:var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    width:48px;
+    height:4px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+
+}
+.current-page-port{
+    position: relative;
+}
+.current-page-port::after{
+    content:"";
+    background-color:var(--accent-color);
+    border-radius: 2px;
+    position: absolute;
+    width:78px;
+    height:4px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+}
 /*------------------------HERO SECTION-----------------*/
 .section-hero{
     background-color: var(--background-secondary-colour);
@@ -286,6 +319,33 @@ body{
     display: block;
     max-width: 100%;
 
+
+}
+.activity-wrapper{
+    position: relative;
+}
+.activity-overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+
+
+    width:100%;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--second-accent-color);
+    background-color: rgba(47, 48, 58, 0.8);
+
 }
 
 .activity-title{
@@ -401,6 +461,7 @@ margin-bottom:10px;
     display:flex;
     align-items: center;
     justify-content: center;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 }
 
@@ -447,8 +508,10 @@ margin-bottom:10px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 }
+
 .clients-item + .clients-item{
     margin-left: 30px;
 }
@@ -473,7 +536,8 @@ margin-bottom:10px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color:var(--second-accent-color)
+    color:var(--second-accent-color);
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     
 }
 
@@ -483,6 +547,7 @@ margin-bottom:10px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .address-item{
     margin-bottom: 9px;
@@ -541,6 +606,7 @@ margin-bottom:10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 }
 
@@ -575,6 +641,8 @@ margin-bottom:10px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shaodw cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
 }
 .portfolio-list{
     display:flex;
@@ -590,6 +658,7 @@ margin-bottom:10px;
 .currrent-bottom{
     background-color: var(--accent-color);
     color:var(--second-accent-color);
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shaodw cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 
@@ -654,6 +723,7 @@ margin-bottom:10px;
 }
 .port-link{
     display:inline-block;
+    transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .port-link:hover,.port-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
