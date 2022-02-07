@@ -8,6 +8,8 @@
     --background-secondary-colour: #2F303A;
     --team-section-background: #F5F4FA;
     --social-media-card-color:#AFB1B8;
+    --darkest-black:#000000;
+
 }
 h1,
 h2,
@@ -802,4 +804,69 @@ margin-bottom:10px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--background-secondary-colour);
+}
+/*-------------------BACK DROP----------------------*/
+.back-drop{
+    position:fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    
+
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity:1;
+    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+
+
+
+
+
+
+}
+.is-hidden .modal{
+    transform: scale(0.2) rotate(-45deg);
+}
+.modal{
+    position:absolute;
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1.0) rotate(0deg);
+    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+    background-color: var(--second-accent-color);
+
+
+}
+.modal-button{
+    position:absolute;
+    right: 8px;
+    top:8px;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--second-accent-color);
+    color:var(--darkest-black);
+
+}
+
+.icon-cross{
+    height:11px;
+    width:11px;
+    fill:inherit;
+
+}
+
+.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    
+
 }
