@@ -114,7 +114,7 @@ body{
     display: block;
     padding-bottom: 32px;
     padding-top: 32px;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
     position: relative;
 }
 .page-header{
@@ -134,7 +134,7 @@ body{
 
     padding-bottom: 32px;
     padding-top: 32px;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacs-header-link:hover,
@@ -193,7 +193,7 @@ body{
     position: absolute;
     width:78px;
     height:4px;
-    bottom:0;
+    bottom:-1px;
     left:50%;
     transform: translateX(-50%);
 }
@@ -463,7 +463,7 @@ margin-bottom:10px;
     display:flex;
     align-items: center;
     justify-content: center;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -510,7 +510,7 @@ margin-bottom:10px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: border-color  250ms cubic-bezier(0.4, 0, 0.2, 1), color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -539,7 +539,7 @@ margin-bottom:10px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color:var(--second-accent-color);
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -549,7 +549,7 @@ margin-bottom:10px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-item{
     margin-bottom: 9px;
@@ -608,7 +608,7 @@ margin-bottom:10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -643,7 +643,7 @@ margin-bottom:10px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shaodw cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1), color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shaodw 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .portfolio-list{
@@ -660,7 +660,7 @@ margin-bottom:10px;
 .currrent-bottom{
     background-color: var(--accent-color);
     color:var(--second-accent-color);
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shaodw cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: background-color  250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shaodw 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -725,9 +725,10 @@ margin-bottom:10px;
 }
 .port-link{
     display:inline-block;
-    transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.port-link:hover,.port-link:focus{
+.port-link:hover,
+.port-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -750,7 +751,7 @@ margin-bottom:10px;
     background-color:rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
 }
@@ -760,7 +761,8 @@ margin-bottom:10px;
 
 }
 
-.portfolio-cards-item:hover .port-img-text{
+.portfolio-cards-item:hover .port-img-text,
+.portfolio-cards-item:focus .port-img-text{
     transform: translateY(0);
 }
 /*--------------FLEX CONTAINER-----------------------------*/
@@ -815,7 +817,7 @@ margin-bottom:10px;
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity:1;
-    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: opacity  250ms cubic-bezier(0.4, 0, 0.2, 1) , visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -836,7 +838,7 @@ margin-bottom:10px;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%) scale(1.0) rotate(0deg);
-    transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--second-accent-color);
 
