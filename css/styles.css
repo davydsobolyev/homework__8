@@ -767,8 +767,9 @@ margin-bottom:10px;
 
 }
 
-.portfolio-cards-item:hover .port-img-text,
-.portfolio-cards-item:focus .port-img-text{
+.port-link:focus .port-img-text,
+.port-link:hover .port-img-text
+{
     transform: translateY(0);
 }
 /*--------------FLEX CONTAINER-----------------------------*/
