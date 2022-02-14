@@ -386,6 +386,7 @@
       </footer>
       <div class="back-drop is-hidden" data-modal >
         <div class="modal">
+          <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
           <form class="modal-form">
             <label class="name-label label-form" for="name">Имя</label>
             <div class="form-field">
@@ -408,8 +409,15 @@
               <use class="mail-use" href="./images/sprite.svg#icon-email-black"></use>
             </svg>
             </div>
-            <label for="textarea-com" class="textarea-label"></label>
+            <label for="textarea-com" class="textarea-label">Комментарий</label>
             <textarea class="textarea-input" name="comment" placeholder="Введите текст"></textarea>
+            <label for="consent" class="consent-label">
+              <input type="checkbox" class="consent-checkbox visually-hidden" name="consent" id="consent">
+              <span class="checkbox-icon"></span>
+              <span>Соглашаюсь с рассылкой и принимаю <a href="" class="consent-link">Условия договора</a> </span>
+
+            </label>
+            <button type="submit" class="modal-submit">Отправить</button>
           </form>
           <button class="button modal-button" data-modal-close>
             <svg class="icon-cross">
