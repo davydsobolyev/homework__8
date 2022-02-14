@@ -369,16 +369,56 @@
             </li>
        </ul>
        </div>
-</div>
-</footer>
-<div class="back-drop is-hidden" data-modal >
-  <div class="modal">
-    <button class="button modal-button" data-modal-close>
-      <svg class="icon-cross">
-        <use href="./images/sprite.svg#icon-cross"></use></svg>
-    </button>
-  </div>
-  
+       <div class="footer-form-container">
+        <p class="footer-form-title">Подпишитесь на рассылку</p>
+        <form class="footer-form" autocomplete="off">
+          <label class="footer-label">
+            <input class="footer-input" type="text" name="email" placeholder="E-mail">
+          </label>
+          <button class="footer-submit" type="submit"><span>Подписаться</span>
+          
+              <svg class="foot-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+          </button>
+        </form>
+      </div>
+      </footer>
+      <div class="back-drop is-hidden" data-modal >
+        <div class="modal">
+          <form class="modal-form">
+            <label class="name-label label-form" for="name">Имя</label>
+            <div class="form-field">
+            <input class="name-input form-input" type="text" name="name" id="name" placeholder=""/>
+            <svg class="name-icon" height="18" width="18">
+              <use class="name-use" href="./images/sprite.svg#icon-person-black"></use>
+            </svg>
+            </div>
+            <label class="tel-label label-form" for="tel">Телефон</label>
+            <div class="form-field">
+            <input class="tel-input form-input" type="tel" name="tel" id="tel" placeholder=""/>
+            <svg class="tel-icon" height="18" width="18">
+              <use class="tel-use" href="./images/sprite.svg#icon-phone-black"></use>
+            </svg>
+            </div>
+            <label class="mail-label label-form" for="mail">Почта</label>
+            <div class="form-field">
+            <input class="mail-input form-input" type="email" name="mail" id="mail" placeholder=""/>
+            <svg class="mail-icon" height="18" width="18">
+              <use class="mail-use" href="./images/sprite.svg#icon-email-black"></use>
+            </svg>
+            </div>
+            <label for="textarea-com" class="textarea-label"></label>
+            <textarea class="textarea-input" name="comment" placeholder="Введите текст"></textarea>
+          </form>
+          <button class="button modal-button" data-modal-close>
+            <svg class="icon-cross">
+              <use href="./images/sprite.svg#icon-cross"></use></svg>
+          </button>
+        </div>
+        
+      </div>
+      
 </div>
 
 <script src="./js/modal.js"></script>
