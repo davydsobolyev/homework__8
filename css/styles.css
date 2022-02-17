@@ -1152,7 +1152,7 @@ margin-bottom:10px;
 
 .consent-checkbox:checked + .checkbox-icon {
     background-color: var(--accent-color);
-    border:var(--accent-color);
+    border: 2px solid var(--accent-color);
     background-size: contain;
     background-origin: border-box;
     border-color: transparent;
