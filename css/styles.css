@@ -1162,6 +1162,7 @@ margin-bottom:10px;
 }
 .consent-checkbox:focus + .checkbox-icon{
     border: 2px solid var(--accent-color);
+    сursor:pointer;
 }
 
 
