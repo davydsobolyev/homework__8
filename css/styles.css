@@ -1081,12 +1081,14 @@ margin-bottom:10px;
     color: var(--main-color);
 }
 .textarea-input{
+    display: block;
     width: 448px;
     height: 120px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 12px;
     padding-bottom: 12px;
+    margin-bottom: 20px;
     resize: none;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
