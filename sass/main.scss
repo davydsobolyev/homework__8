@@ -1,7 +1,12 @@
-@import "./utils/variables";
+@import "./utils/_variables";
+@import "./utils/_common";
+@import "./utils/_basic";
 @import './components/_header';
 @import "./components/_hero";
 @import "./components/_features";
 @import "./components/_activity";
 @import "./components/_team";
 @import "./components/_clients";
+@import "./components/_footer";
+@import "./components/_portfolio";
+@import "./components/_backdrop"
