@@ -9,21 +9,6 @@
   --darkest-black:#000000;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0, 0, 0, 0);
-  overflow: hidden;
-  white-space: nowrap;
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  overflow: hidden;
-}
-
 .form-icon {
   position: absolute;
   left: 12px;
@@ -38,6 +23,21 @@
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  overflow: hidden;
 }
 
 h1,
@@ -89,12 +89,18 @@ body {
   margin: 0 auto;
 }
 
-.footer > .container {
+.container--footer {
   text-align: left;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .logo {
@@ -118,6 +124,11 @@ body {
   color: var(--accent-color);
   padding-bottom: 24px;
   padding-top: 24px;
+}
+
+.logo--footer {
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .header {
@@ -692,16 +703,6 @@ body {
   margin-bottom: 0;
 }
 
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-left: 0;
-}
-
 .footer-media {
   margin-left: 70px;
 }
@@ -911,6 +912,7 @@ body {
   background-color: var(--team-section-background);
   cursor: pointer;
   border: none;
+  border-radius: 4px;
   padding-left: 22px;
   padding-top: 6px;
   padding-right: 22px;
@@ -1006,7 +1008,7 @@ body {
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-cards-list__link:focus, .portfolio-cards-list__link:hover .portfolio-overlay__text {
+.portfolio-cards-list__link:focus .portfolio-overlay__text, .portfolio-cards-list__link:hover .portfolio-overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }

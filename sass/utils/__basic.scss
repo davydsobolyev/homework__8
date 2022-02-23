@@ -45,33 +45,13 @@ body{
   
     
 }
-.footer > .container{
+.container--footer{
     text-align: left;
     width:1200px;
     padding-right:15px;
     padding-left: 15px;
     margin: 0 auto;
+    display: flex;
+    align-items: baseline;
 }
 
-.logo{
-    color:var(--accent-color);
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.20;
-
-    letter-spacing: 0.03em;
-
-    &--light{
-        color:var(--second-accent-color);
-    }
-    
-   &--dark{
-       color: var(--title-text-color);
-   }
-}
-.logo-header{
-    color: var(--accent-color);
-    padding-bottom: 24px;
-    padding-top: 24px;
-}
