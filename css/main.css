@@ -52,7 +52,7 @@ h6 {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 p {
@@ -83,10 +83,28 @@ body {
 
 .container {
   text-align: center;
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .container--footer {
@@ -454,24 +472,29 @@ body {
 
 .team {
   background-color: var(--team-section-background);
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .team__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
 }
 
 .team-list__item {
@@ -479,10 +502,32 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.team-list__item + .team-list__item {
-  margin-left: 30px;
+@media (max-width: 767px) {
+  .team-list__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .team-list__item {
+    width: calc((100% - 30px ) / 2);
+  }
+  .team-list__item:nth-of-type(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-list__item {
+    width: calc((100% - 120px) / 4);
+  }
+  .team-list__item + .team-list__item {
+    margin-left: 30px;
+  }
 }
 
 .team-list__name {
@@ -505,10 +550,9 @@ body {
 }
 
 .team-list__content {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  text-align: center;
 }
 
 .card-media-list {
@@ -569,33 +613,46 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+}
+
+@media (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .clients-list__item {
+  width: calc((100% - 30px) / 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,10 +663,36 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--social-media-card-color);
+  margin-bottom: 30px;
 }
 
-.clients-list__item + .clients-list__item {
-  margin-left: 30px;
+@media (max-width: 767px) {
+  .clients-list__item:nth-of-type(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    width: calc((100% - 60px) / 3);
+  }
+  .clients-list__item:nth-of-type(3n+2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list__item {
+    width: calc((100% - 150px) / 6);
+  }
+  .clients-list__item + .clients-list__item {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .clients-list__item:first-child {
+    margin-left: 0;
+  }
 }
 
 .clients-list__link {
@@ -623,7 +706,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
