@@ -1,6 +1,11 @@
 
 .activity{
+    display: none;
     padding-bottom: 94px;
+
+
+    @media (min-width: 1200px){
+        display: block;
 
     &__title{
     font-weight: bold;
@@ -11,6 +16,7 @@
     color:var(--title-text-color);
 
     margin-bottom: 50px;
+    }
 
 
 
