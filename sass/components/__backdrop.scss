@@ -2,8 +2,20 @@
 .back-drop{
     position:fixed;
     top:0;
-    width: 100vw;
-    height: 100vh;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 94px;
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+   
+
+    @media screen and (min-width:768px) {
+        padding: 0;
+       
+    }
     
 
     background-color: rgba(0, 0, 0, 0.2);
@@ -19,32 +31,56 @@
     transform: scale(0.2) rotate(-45deg);
 }
 .modal{
-    position:absolute;
-    width: 528px;
-    min-height: 581px;
+    position: relative;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 528px;
+        height: 581px;
+        
+    }
+    width:100%;
+    height:609px;
     padding-left:40px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-top: 40px;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%) scale(1.0) rotate(0deg);
+    // top:50%;
+    // left:50%;
+    // transform: translate(-50%, -50%) scale(1.0) rotate(0deg);
     transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--second-accent-color);
     
     &__caption{
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
+        // margin-bottom: 30px;
+        margin-bottom: 12px;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
-        line-height: calc(23 / 20);
+        line-height: calc(30 / 20);
         text-align: center;
         letter-spacing: 0.03em;
         color:var(--title-text-color);
+
+        @media  screen and (min-width: 1200px) {
+            font-size: 20px;
+            line-height: calc(23 / 20);
+            
+        }
     }
 
 
@@ -119,13 +155,19 @@
             font-family: Roboto;
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
-            line-height: calc(24 /14);
+            font-size: 12px;
+            line-height: calc(14 / 12);
             
             
             letter-spacing: 0.03em;
             
             color: var(--main-color);
+
+            @media screen and (min-width: 1200px){
+                line-height: calc(24 / 14);
+                font-size: 14px;
+                
+            }
         }
         &__textarea-label{
             margin-bottom: 4px;
@@ -142,7 +184,7 @@
         }
         &__textarea-input{
             display: block;
-            width: 448px;
+            width:100%;
             height: 120px;
             padding-left: 16px;
             padding-right: 16px;
@@ -155,6 +197,11 @@
             outline: none;
             border-radius: 4px;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            @media screen and (min-width: 1200px) {
+                width: 448px;
+                
+            }
 
            
             &::placeholder{
@@ -227,11 +274,17 @@
     &__input{
        display: block;
        padding-left: 41px;
-       width: 448px;
+       width:100%;
        height: 40px;
        border: 1px solid rgba(33, 33, 33, 0.2);
        border-radius: 4px;
        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+       @media  screen and (min-width:1200px) {
+               width: 448px;
+
+           
+       }
 
        &:focus{
         border-color: var(--accent-color);
@@ -253,12 +306,18 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: calc(24 /14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     
     
     letter-spacing: 0.03em;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px){
+         font-size: 14px;
+         line-height: calc(24 /14);
+        
+    }
 }
 .checkbox-icon{
     display:inline-flex;

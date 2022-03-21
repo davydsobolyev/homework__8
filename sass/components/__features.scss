@@ -1,14 +1,24 @@
 /*----------------------FEATURE-SECTION---------------------*/
 .features{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .features-list{
-    display:flex;
+   margin-bottom: -30px;
+
+   @media (min-width:768px) {
+     display: flex ;
+     flex-wrap: wrap;
+   }
+  
+    
 
 
   &__title{
-    text-align:left;
+    // text-align:left;
+    text-align: center;
     font-weight: bold;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -18,28 +28,69 @@
 
     margin-bottom: 10px;
 
+    @media (min-width: 768px){
+      text-align: left;
+    }
+
   }
   &__description{
-    width: 270px;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
+    // width: 270px;
+    
     color: var(--main-color);
     text-align: left;
-  }
-  &__item{
-    width:270px;
-    height: 251px;
-    text-align: left
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+
+    @media (min-width:768px){
+      
     }
-  &__item:nth-of-type(n+2){
-      margin-left: 30px;
+
+    @media (min-width: 1200px){
+      height:75px;
+    }
   }
+
+  &__item{
+    width:100%;
+    text-align: left;
+    margin-bottom: 30px;
+    height: 226px;
+
+    @media (min-width:768px) and (max-width: 1199px){
+      width: calc((100% - 30px) / 2);
+
+      &:nth-of-type(2n){
+        margin-left: 30px;
+      }
+      &:nth-of-type(-n + 2){
+        height: 251px;
+      }
+
+    }
+
+    @media (min-width: 1200px){
+      width: calc((100% - 90px) / 4);
+      height: 251px;
+      width:270px;
+      &:nth-of-type(n+2){
+            margin-left: 30px;
+        }
+    }
+    }
+
   
 }
 
 .svg-img-container{
-    width: 270px;
+    // width: 270px;
+    width: 100%;
     min-height: 120px;
     background-color:var(--team-section-background);
     display: flex;
