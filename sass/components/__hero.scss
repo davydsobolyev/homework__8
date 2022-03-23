@@ -30,7 +30,16 @@
          width:768px;
          height: 400px;
          background-image:linear-gradient(
-            rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/tab-hero.jpg); 
+            rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/tab-hero.jpg);
+            
+          @media (min-resolution: 192dpi),(min-device-pixel-ratio: 2),
+            (min-resolution: 2dppx){
+              background-image:linear-gradient(
+                  rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/tab-hero-2x.jpg);
+          
+          
+              
+            }
          
      }
     @media screen and (min-width: 1200px){
@@ -40,6 +49,15 @@
             rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/image1.png); 
         padding-top: 200px;
         padding-bottom: 200px;
+
+        @media (min-resolution: 192dpi),(min-device-pixel-ratio: 2),
+            (min-resolution: 2dppx){
+              background-image:linear-gradient(
+                  rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/lap-hero-2x.jpg);
+          
+          
+              
+            }
 
         
     }

@@ -95,19 +95,31 @@
         <ul class="activity-list list">
          <li class="activity-list__item">
            <div class="activity-wrapper">
-             <img class="activity-wrapper__image" src="./images/image1.jpg" alt="Работник в офисе работает с айпадом и копмьютером" width="370" />
+             <img class="activity-wrapper__image" 
+              srcset="./images/image1.jpg 1x, ./images/image1-2x.jpg  2x"
+              src="./images/image1.jpg" alt="Работник в офисе работает с айпадом и копмьютером" 
+              width="370"
+            />
              <p class="activity-wrapper__overlay">Десктопные приложения</p>
             </div>
           </li>
          <li class="activity-list__item">
            <div class="activity-wrapper">
-             <img class="activity-wrapper__image" src="./images/image2.jpg" alt="Работник офиса работает с ноутбуком" width="370"/>
+             <img class="activity-wrapper__image" 
+             srcset="./images/image2.jpg 1x, ./images/image2-2x.jpg  2x"
+             src="./images/image2.jpg" alt="Работник офиса работает с ноутбуком"
+              width="370"
+             />
              <p class="activity-wrapper__overlay">Мобильные приложения</p>
            </div>
           </li>
          <li class="activity-list__item">
            <div class="activity-wrapper">
-             <img class="activity-wrapper__image" src="./images/image3.jpg" alt="Планшет с политрой красок" width="370" />
+             <img class="activity-wrapper__image"
+              srcset="./images/image3.jpg 1x, ./images/image3-2x.jpg  2x"
+              src="./images/image3.jpg" alt="Планшет с политрой красок" 
+              width="370" 
+             />
              <p class="activity-wrapper__overlay">Дизайнерские решения</p>
             </div>
           </li>
@@ -120,7 +132,11 @@
          <h2 class="team__title">Наша команда</h2>
          <ul class="team-list list">
           <li class="team-list__item">
+            <picture>
+              <source srcset="./images/image5-tel.jpg 1x, ./images/image5-tel-2x.jpg 2x" media="(max-width: 767px)">
+              <source srcset="./images/image5-tab.jpg 1x" media="(max-width: 1199px)">
               <img src="./images/image5.jpg" alt="Работник в фиолетовой рубвшке" width="270"/>
+            </picture>
               <div class="team-list__content">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__profesion">Product Designer</p>
