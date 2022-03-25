@@ -5,9 +5,9 @@
     padding-bottom: 118px;
     padding-top: 118px;
     width:100%;
-    height:400px;
     margin-left: auto;
     margin-right: auto;
+    height:400px;
     background-size:cover;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/tel-hero.jpg);
@@ -63,8 +63,14 @@
     }
     
     &__container{
+        @media screen and (max-width: 767px){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         @media screen and (min-width: 1200px){
             width:696px;
+            margin-left: auto;
+            margin-right: auto;
         
             
         }
@@ -72,7 +78,7 @@
         text-align: center;
     }
     &__title{
-        width: 360px;
+        display: block;
         font-weight: 900;
 
         // font-size: 44px;
@@ -88,15 +94,19 @@
         margin-left: auto;
     
         letter-spacing: 0.06em;
+        @media (min-width: 768px){
+            width: 360px;
+        }
 
         @media (min-width: 1200px){
                font-size: 44px;
                line-height: 1.36;
-               width: 100%;
+               width: 696px;
                height: 120px;
     }
 }
     &__button{
+        display: inline-block;
         font-family: Roboto, "Sans-serif";
         font-weight: 700;
         font-size: 16px;
@@ -112,6 +122,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 32px;
+        min-width: 200px;
     }
   
 

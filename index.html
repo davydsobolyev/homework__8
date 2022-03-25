@@ -12,7 +12,7 @@
     <link rel='stylesheet' href="css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+     <header class="header">
      <div class="container header__container">
        <nav class="navigation">
          <a href="" class="logo logo-header link">Web<span lang="en" class="logo--dark">Studio</span></a>
@@ -33,14 +33,59 @@
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>+38 096 111 11 11</a></li>
         </ul>
-    
 
-     </div>  
-    </header>-->
+         <button type="button" class="menu-button-open">
+           <svg width="40" height="40" >
+             <use class="menu-button-open__svg" href="./images/sprite.svg#icon-open"></use>
+           </svg>
+         </button>
+    </div>  
+     <div class="mob-menu is-hidden">
+      <div class="mob-container">
+       <button type="button" class="menu-button-close">
+         <svg width="40" height="40" >
+           <use class="menu-button-close__svg" href="./images/sprite.svg#icon-close"></use>
+         </svg>
+       </button>
+       <div class="mob-menu__wrap">
+       <nav class="navigation-mob">
+        <ul class="nav-mob-list list">
+           <li class="nav-mob-list__item"><a class="current nav-mob-list__link" href="./index.html">Студия</a></li>
+           <li class="nav-mob-list__item"><a class="nav-mob-list__link link" href="./portfolio.html" >Портфолио</a></li>
+           <li class="nav-mob-list__item"><a class="nav-mob-list__link link" href="">Контакты</a></li>
+        </ul>
+
+   
+       </nav> 
+       </div>
+       <div class="mob-menu__bwrap">
+       <ul class="contacs-header-mob list">
+        <li class="contacs-header-mob__item">
+          <a class="contacs-header-mob__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+         </li>
+           <li class="contacs-header-mob__item">
+             <a class="contacs-header-mob__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+       </ul>
+       <ul class="social-mob list">
+          <li class="social-mob__item"><a href="" class="social-mob__link">Instagram</a></li>
+          <li class="social-mob__item"><a href="" class="social-mob__link">Twitter</a></li>
+          <li class="social-mob__item"><a href="" class="social-mob__link">Facebook</a></li>
+          <li class="social-mob__item"><a href="" class="social-mob__link">LinkedIn</a></li>
+       </ul>
+      </div>
+       
+
+       
+      </div>
+ 
+
+    </div>
+    </header>
 <main>
     <section class="hero section">
       <div class="container hero__container">
-       <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+       <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
@@ -467,6 +512,7 @@
       
 
 <script src="./js/modal.js"></script> 
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
