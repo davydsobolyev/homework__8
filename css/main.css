@@ -319,6 +319,7 @@ body {
 .mailbox:hover, .mailbox:focus {
   fill: var(--accent-color);
 }
+/* comment */
 
 .icon-phone {
   margin-right: 10px;
