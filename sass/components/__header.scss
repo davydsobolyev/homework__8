@@ -16,10 +16,17 @@
 .nav-list{
     display: none;
     margin-left: 93px;
-    width: 294px;
+    @media (miax-width:  1199px){
+        width: 294px;
+    }
     @media screen and (min-width:768px){
          display: flex;
         margin-left: 88px;
+    }
+    @media screen and(min-width: 1200px){
+        margin-left: 93px;
+
+        
     }
 
 
@@ -58,14 +65,11 @@
     @media (min-width: 768px){
           display:flex;
           flex-wrap:wrap;
-          padding-top: 21px;
-          padding-bottom: 21px;
     }
     @media screen and (min-width: 1200px){
         justify-content: center;
         align-items: center;
-        padding-top: 0;
-        padding-bottom: 0;
+        
     }
 
    &__link{  
@@ -101,9 +105,16 @@
     display: flex;
     align-items: center;
 
-    @media (min-width: 768px){
+    @media (min-width: 768px) and (max-width: 1199px){
         & + &{
             margin-top: 10px;
+        }
+        &:nth-child(1){
+            padding-top: 21px;
+
+        }
+        &:last-child{
+            padding-bottom: 21px;
         }
 
     }
@@ -120,8 +131,10 @@
     margin-right: 10px;
     fill: currentColor;
 
+
     &:hover,&:focus{
         fill:var(--accent-color);
+
     }
   
 }
@@ -204,6 +217,15 @@
     fill: var(--title-text-color);
     border: none;
     background-color: transparent;
+
+    &:hover,&:focus{
+        color:var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.menu-button-close__svg{
+    fill:currentColor;
 }
 .nav-mob-list__link{
 
@@ -217,6 +239,7 @@
 
     &:hover, &:focus{
         color: var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 .nav-mob-list__item + .nav-mob-list__item{
@@ -243,6 +266,7 @@
     color:var(--main-color);
     &:hover, &:focus{
         color: var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
 }
@@ -259,6 +283,7 @@
 
     &:hover, &:focus{
         color: var(--accent-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 } 
 .social-mob{
@@ -301,7 +326,8 @@
      color: var(--accent-color);
 
      &:hover, &:focus {
-         color:var(--accent-color)
+         color:var(--accent-color);
+         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      }
 }
 .current{

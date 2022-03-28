@@ -9,6 +9,7 @@
     padding-top: 93px;
     padding-left: 15px;
     padding-right: 15px;
+    overflow-y: scroll;
 
    
 
@@ -33,6 +34,10 @@
 .modal{
     position: relative;
 
+    @media(min-width:479px){
+        width: 696px;
+    }
+
     @media screen and (min-width: 480px) {
         width: 450px;
         position: absolute;
@@ -49,7 +54,6 @@
         
     }
     width:100%;
-    height:609px;
     padding-left:40px;
     padding-right: 40px;
     padding-bottom: 40px;
