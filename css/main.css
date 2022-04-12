@@ -764,7 +764,12 @@ body {
   width: 100%;
   text-align: left;
   margin-bottom: 30px;
-  height: 226px;
+}
+
+@media (min-width: 480px) {
+  .features-list__item {
+    height: 226px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1316,10 +1321,6 @@ body {
   margin-bottom: 0;
 }
 
-.footer-media {
-  margin-bottom: 60px;
-}
-
 @media screen and (min-width: 768px) {
   .footer-media {
     margin-bottom: 0;
@@ -1328,7 +1329,6 @@ body {
 
 @media (min-width: 1200px) {
   .footer-media {
-    margin-right: 93px;
     text-align: left;
   }
 }
@@ -1557,6 +1557,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-about-wrap {
+  margin-bottom: 60px;
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-about-wrap {
     display: -webkit-box;
@@ -1578,6 +1582,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-right: 93px;
   }
 }
 
@@ -1798,6 +1806,12 @@ body {
 .portfolio-cards-list__link:focus .portfolio-overlay__text, .portfolio-cards-list__link:hover .portfolio-overlay__text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .portfolio-cards-list__link {
+    width: 354px;
+  }
 }
 
 .portfolio-overlay__text {
